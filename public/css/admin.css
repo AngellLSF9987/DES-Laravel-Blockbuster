@@ -49,10 +49,23 @@ body{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: max-content;
+  width: 100%;
   overflow-x: hidden;
   /* Evita el desbordamiento horizontal */
+}
 
+.main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.main, .card-header, .card-title, .img, img {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.main, .card-header, .card-title {
+  text-align: center;
 }
 
 .footer{

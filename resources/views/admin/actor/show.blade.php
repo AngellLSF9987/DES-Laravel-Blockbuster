@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('title', $viewData["title"])
 @section('subtitle', $viewData["subtitle"])
-@section('content')
+@section('list')
 <div class="card mb-3">
   <div class="row g-0">
     <div class="col-md-4">

@@ -37,7 +37,8 @@
                 </ul>
             </div>
             <div class="d-flex mb-3">
-                <input type="search" class="form-control me-2" name="search" id="" aria-label="Search" placeholder="Search..." />
+                <input type="search" class="form-control me-2" name="search" id="" aria-label="Search"
+                    placeholder="Search..." />
                 <button class="btn btn-success" type="submit">Search</button>
             </div>
             <div class="col-0 content-dark" id="logoAdmin">
@@ -48,16 +49,9 @@
             </div>
         </div>
     </nav>
-    <div class="main">
-        <div class="g-0 m-5">
-            <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
-                @yield('content')
-            </div>
-            <a href="{{ route('home.index') }}" class="mt-2 btn bg-primary text-white">Go back to the home page</a>
-        </div>
-    </div>
-
-
+    <main>
+        @yield('content')
+    </main>
     <!-- footer -->
     <div class="footer">
         <div class="copyright py-4 text-center text-white">
