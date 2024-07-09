@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="{{ asset('img\background2.ico') }}" /> <!-- Icono personalizado -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
     <link href="{{ asset('/css/admin.css') }}" rel="stylesheet" />
-    <title>@yield('title', 'Admin - BlockBuster')</title>
+    <title>@yield('title', 'Admin - The BlockBuster')</title>
 </head>
 
 <body>
@@ -18,19 +19,18 @@
                     <span class="fs-4">Admin Home Panel</span>
                 </a>
                 <hr />
-                <ul class="nav flex-column">
-                    <li><a href="{{ route('admin.actor.index') }}" class="nav-link text-white">- Admin - Home -</a></li>
-                    <li><a href="#" class="nav-link text-white">- Admin - Actors && Actresses -</a></li>
-                    <li>
+                <ul>
+                    <li><a href="{{ route('admin.home.index') }}" class="nav-link text-white">- Actors && Actresses -</a></li>
+                    <!--<li>
                         <a href="{{ route('home.index') }}" class="mt-2 btn bg-primary text-white">- Go back to the home page -</a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
             <!-- sidebar -->
             <div class="col content-grey">
                 <nav class="p-3 shadow text-end">
                     <span class="profile-font">Admin</span>
-                    <img class="img-profile rounded-circle" src="{{ asset('/img/undraw_profile.svg') }}">
+                    <img class="img-profile rounded-circle" src="{{ asset('/img/user.png') }}">
                 </nav>
             </div>
         </div>

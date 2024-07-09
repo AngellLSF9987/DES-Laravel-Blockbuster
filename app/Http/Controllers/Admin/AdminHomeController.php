@@ -10,9 +10,9 @@ class AdminHomeController extends Controller
     public function index()
     {
         $viewData = [];
-        $viewData["title"] = "A BlockBuster Films";
-        $viewData["subtitle"] = "Admin Page - Employees";
-
+        $viewData["title"] = "THE BLOCKBUSTER";
+        $viewData["subtitle"] = "El Mundo del Cine hasta tú quieras";
+        $viewData["author"] = "Developed by: Angel Luis Saorin Faura";
         return view('admin.home.index')->with("viewData", $viewData);
     }
 }
