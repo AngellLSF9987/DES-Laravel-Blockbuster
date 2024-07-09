@@ -1,3 +1,21 @@
+/* || General setup */
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    background-color: #cecbcb;
+    overflow-x: hidden;
+    /* Evita el desbordamiento horizontal */
+}
+
 body{
   display: flex;
   flex-direction: column;
@@ -13,12 +31,6 @@ body{
 
 .header ul li{
   list-style: none;
-}
-
-hr{
-  color: rgb(255, 255, 255);
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
 }
 
 .main{

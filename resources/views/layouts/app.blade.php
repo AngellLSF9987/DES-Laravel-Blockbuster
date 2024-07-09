@@ -15,7 +15,7 @@
 
     <header class="masthead bg-dark text-white text-center py-4">
         <div class="container d-flex align-items-center flex-column">
-            <h2>@yield('title', 'THE BLOCKBUSTER')</h2>
+            <h2>@yield('title', 'Admin - THE BLOCKBUSTER')</h2>
         </div>
     </header>
 
@@ -50,7 +50,7 @@
             <div class="container">
                 <small>
                     <b>Cinéfilos por un tubo</b><br />
-                    Copyright - Angel Luis Saorin Faura
+                    Copyright - @yield('author', 'Developed by: Angel Luis Saorin Faura')
                     </a>
                 </small>
             </div>

@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('title', $viewData["title"])
+@section('author', $viewData["author"])
 @section('content')
 
 <div class="container-fluid" style="background-color:black;">
@@ -8,6 +9,4 @@
         <img src="{{ asset('/img/background1.jpg') }}" class="img-fluid">
     </div>
 </div>
-
-
 @endsection

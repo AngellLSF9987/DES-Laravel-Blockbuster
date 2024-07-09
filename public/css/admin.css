@@ -1,27 +1,57 @@
+/* || General setup */
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+    /* Evita el desbordamiento horizontal */
+}
+
 body{
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .header .nav{
   flex-direction: row;
   flex:2;
-  width: 100%;
-  height: 20%;
-  background-color: black;
+  overflow-x: hidden;
+  /* Evita el desbordamiento horizontal */
 }
 
 .header ul li{
   list-style: none;
 }
 
-hr{
-  color: rgb(255, 255, 255);
+.navbar-brand, .navbar-nav{
+  font-weight: bold;
+  margin: auto 15px;
+}
+
+.navbar-nav{
+  font-size: large;
+}
+
+.col-0, .p3, .img-profile {
+  margin: auto 20px;
 }
 
 .main{
-  flex:4;
-  height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: max-content;
+  overflow-x: hidden;
+  /* Evita el desbordamiento horizontal */
 
 }
 
@@ -55,12 +85,14 @@ hr {
 }
 
 .profile-font {
-  color: #858796 !important;
-  font-size: 80%;
-  font-weight: 400;
+  color: #ffffff !important;
+  font-size: large;
+  font-weight: bold;
 }
 
 .card-header {
   background-color: #f8f9fc;
   border-bottom: 1px solid #e3e6f0;
+  width: 100%;
+  overflow-x: hidden;
 }
